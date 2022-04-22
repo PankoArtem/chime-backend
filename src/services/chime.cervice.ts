@@ -2,8 +2,8 @@ import AWS from 'aws-sdk'
 import { v4 } from 'uuid'
 
 const chime = new AWS.Chime({
-  accessKeyId: 'AKIATVY3NUNZWKRYAKQI',
-  secretAccessKey: '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',
+  accessKeyId: process.env.ACCESS_KEY_ID,
+  secretAccessKey: process.env.SECRET_ACCESS_KEY,
   region: 'us-east-1',
 })
 
